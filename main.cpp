@@ -143,6 +143,7 @@ int main()
     parseForU_Lists(text);
     //parseForO_Lists(text);
     parseForClosedLi(text);
-    cout << text << endl;
+    ofstream out("output.html");
+    out << text;
     return 0;
 }
